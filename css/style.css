@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --main-text-color: #212121;
   --background-color: #ffffff;
   --additional-text-color: #757575;
@@ -21,9 +21,9 @@
 
   --duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -35,7 +35,7 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 body {
   background-color: var(--background-color);
@@ -81,13 +81,13 @@ button {
   border-radius: 4px;
 }
 
-.container {
-  /* outline: 2px solid rgb(47, 89, 255); */
+/* .container {
+  // outline: 2px solid rgb(47, 89, 255); 
 
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-}
+} */
 
 .section {
   /* outline: 2px solid red; */
@@ -107,7 +107,7 @@ button {
 }
 
 /* ---------- HEADER ----------- */
-.header {
+/* .header {
   border-bottom: 1px solid var(--line-color);
 }
 .header .link {
@@ -117,9 +117,9 @@ button {
 }
 .header .item:not(:last-child) {
   margin-right: 50px;
-}
+} */
 
-.logo {
+/* .logo {
   margin-right: 93px;
 
   font-family: var(--secondary-font-family);
@@ -131,9 +131,9 @@ button {
 
 .logo span {
   color: var(--btn-color);
-}
+} */
 
-.links-nav a,
+/* .links-nav a,
 .header-contacts a {
   font-weight: 500;
   line-height: calc(16 / 14);
@@ -194,10 +194,10 @@ a.current::after {
 
 .header-contacts {
   margin-left: auto;
-}
+} */
 
 /* ---------- HERO ----------- */
-.hero {
+/* .hero {
   margin: 0 auto;
   background-color: rgba(47, 48, 58, 0.4);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -221,9 +221,9 @@ a.current::after {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-}
+} */
 
-.btn {
+/* .btn {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
@@ -251,7 +251,7 @@ a.current::after {
 .btn:hover,
 .btn:focus {
   background-color: var(--btn-active-color);
-}
+} */
 
 .title {
   margin-bottom: 50px;
