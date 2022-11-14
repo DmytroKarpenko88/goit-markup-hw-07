@@ -37,7 +37,7 @@
   overflow: hidden;
 } */
 
-body {
+/* body {
   background-color: var(--background-color);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -70,7 +70,7 @@ img {
 }
 
 address {
-  /* or .footer-address */
+  
   font-style: normal;
 }
 
@@ -79,7 +79,7 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-}
+} */
 
 /* .container {
   // outline: 2px solid rgb(47, 89, 255); 
@@ -89,9 +89,7 @@ button {
   padding: 0 15px;
 } */
 
-.section {
-  /* outline: 2px solid red; */
-
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -104,7 +102,7 @@ button {
 .wrapper {
   display: flex;
   align-items: center;
-}
+} */
 
 /* ---------- HEADER ----------- */
 /* .header {
@@ -253,14 +251,14 @@ a.current::after {
   background-color: var(--btn-active-color);
 } */
 
-.title {
+/* .title {
   margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
-}
+} */
 
 /* ---------- FEATURES ----------- */
 /* 
@@ -471,7 +469,7 @@ a.current::after {
 
 /* ---------- PROJECTS ---------- */
 
-.projects {
+/* .projects {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -495,9 +493,9 @@ a.current::after {
 .projects .projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 
-.project-img-box {
+/* .project-img-box {
   position: relative;
   overflow: hidden;
 }
@@ -525,15 +523,15 @@ a.current::after {
 .projects-link:hover .overlay,
 .projects-link:focus .overlay {
   transform: translateX(0);
-}
-
+} */
+/* 
 .project-description {
   padding: 20px 24px;
   border: 1px solid var(--container-color);
   border-top: 0;
-}
+} */
 
-.project-title {
+/* .project-title {
   display: block;
   margin-bottom: 4px;
 
@@ -547,11 +545,11 @@ a.current::after {
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--additional-text-color);
-}
+} */
 
 /* ---------- FOOTER ---------- */
 
-.footer {
+/* .footer {
   padding: 60px 0;
   background-color: var(--main-footer-background-color);
 }
@@ -643,11 +641,11 @@ a.current::after {
 .icon-send {
   fill: var(--background-color);
   margin-left: auto;
-}
+} */
 
 /* ---------- MODAL ---------- */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   z-index: 1;
   top: 0;
@@ -837,4 +835,4 @@ a.current::after {
 .checkbox:checked + .form-check {
   background-color: var(--btn-color);
   border: none;
-}
+} */

@@ -4,8 +4,7 @@
 @import './utils/_placeholders';
 @import './utils/_visually-hidden';
 
-
-// components 
+// components
 
 @import './components/_container';
 @import './components/_header';
@@ -18,5 +17,6 @@
 @import './components/social-links';
 @import './components/clients';
 @import './components/filters';
-
-
+@import './components/_projects';
+@import './components/footer';
+@import './components/modal';
