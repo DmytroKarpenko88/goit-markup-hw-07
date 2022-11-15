@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -26,15 +26,17 @@
           <a class="logo" href="./index.html"><span>Web</span>Studio</a>
 
           <ul class="links-nav list wrapper">
-            <li class="item"><a class="link" href="./index.html">Студія</a></li>
-            <li class="item"><a class="current link" href="./portfolio.html">Портфоліо</a></li>
-            <li class="item"><a class="link" href="">Контакти</a></li>
+            <li class="item"><a class="header__link" href="./index.html">Студія</a></li>
+            <li class="item">
+              <a class="header__link current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="item"><a class="header__link" href="">Контакти</a></li>
           </ul>
         </nav>
 
-        <ul class="header-contacts list wrapper">
+        <ul class="header__contacts list wrapper">
           <li class="item">
-            <a class="mail link" href="mailto:info@devstudio.com">
+            <a class="mail header__link" href="mailto:info@devstudio.com">
               <svg class="icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
@@ -42,7 +44,7 @@
             >
           </li>
           <li class="item">
-            <a class="tel link" href="tel:+3809611111">
+            <a class="tel header__link" href="tel:+3809611111">
               <svg class="icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
@@ -67,8 +69,8 @@
 
           <ul class="projects">
             <li class="item box">
-              <a class="projects-link" href="">
-                <div class="project-img-box">
+              <a class="projects__link" href="">
+                <div class="project__img-box">
                   <img src="./images/portfolio-img1.jpg" alt="Веб-сайт Технокряк" width="370" />
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -76,15 +78,15 @@
                     приватну особу.
                   </p>
                 </div>
-                <div class="project-description">
-                  <h2 class="project-title">Технокряк</h2>
-                  <p class="project-example">Веб-сайт</p>
+                <div class="project__description">
+                  <h2 class="project__title">Технокряк</h2>
+                  <p class="project__example">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="item box">
-              <a class="projects-link" href="">
-                <div class="project-img-box">
+              <a class="projects__link" href="">
+                <div class="project__img-box">
                   <img
                     src="./images/portfolio-img2.jpg"
                     alt="Веб-сайт New Orlean vs Golden Star"
@@ -96,15 +98,15 @@
                     приватну особу.
                   </p>
                 </div>
-                <div class="project-description">
-                  <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
-                  <p class="project-example">Дизайн</p>
+                <div class="project__description">
+                  <h2 class="project__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="project__example">Дизайн</p>
                 </div>
               </a>
             </li>
             <li class="item box">
-              <a class="projects-link" href="">
-                <div class="project-img-box">
+              <a class="projects__link" href="">
+                <div class="project__img-box">
                   <img
                     src="./images/portfolio-img3.jpg"
                     alt="Веб-сайт Ресторан Seafood"
@@ -116,15 +118,15 @@
                     приватну особу.
                   </p>
                 </div>
-                <div class="project-description">
-                  <h2 class="project-title">Ресторан Seafood</h2>
-                  <p class="project-example">Додаток</p>
+                <div class="project__description">
+                  <h2 class="project__title">Ресторан Seafood</h2>
+                  <p class="project__example">Додаток</p>
                 </div>
               </a>
             </li>
             <li class="item box">
-              <a class="projects-link" href="">
-                <div class="project-img-box">
+              <a class="projects__link" href="">
+                <div class="project__img-box">
                   <img src="./images/portfolio-img4.jpg" alt="Веб-сайт Проєкт Prime" width="370" />
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -132,15 +134,15 @@
                     приватну особу.
                   </p>
                 </div>
-                <div class="project-description">
-                  <h2 class="project-title">Проєкт Prime</h2>
-                  <p class="project-example">Маркетинг</p>
+                <div class="project__description">
+                  <h2 class="project__title">Проєкт Prime</h2>
+                  <p class="project__example">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li class="item box">
-              <a class="projects-link" href="">
-                <div class="project-img-box">
+              <a class="projects__link" href="">
+                <div class="project__img-box">
                   <img src="./images/portfolio-img5.jpg" alt="Веб-сайт Проєкт Boxes" width="370" />
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -148,15 +150,15 @@
                     приватну особу.
                   </p>
                 </div>
-                <div class="project-description">
-                  <h2 class="project-title">Проєкт Boxes</h2>
-                  <p class="project-example">Додаток</p>
+                <div class="project__description">
+                  <h2 class="project__title">Проєкт Boxes</h2>
+                  <p class="project__example">Додаток</p>
                 </div>
               </a>
             </li>
             <li class="item box">
-              <a class="projects-link" href="">
-                <div class="project-img-box">
+              <a class="projects__link" href="">
+                <div class="project__img-box">
                   <img
                     src="./images/portfolio-img6.jpg"
                     alt="Веб-сайт Inspiration has no Borders"
@@ -168,15 +170,15 @@
                     приватну особу.
                   </p>
                 </div>
-                <div class="project-description">
-                  <h2 class="project-title">Inspiration has no Borders</h2>
-                  <p class="project-example">Веб-сайт</p>
+                <div class="project__description">
+                  <h2 class="project__title">Inspiration has no Borders</h2>
+                  <p class="project__example">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="item box">
-              <a class="projects-link" href="">
-                <div class="project-img-box">
+              <a class="projects__link" href="">
+                <div class="project__img-box">
                   <img
                     src="./images/portfolio-img7.jpg"
                     alt="Веб-сайт Видання Limited Edition"
@@ -188,15 +190,15 @@
                     приватну особу.
                   </p>
                 </div>
-                <div class="project-description">
-                  <h2 class="project-title">Видання Limited Edition</h2>
-                  <p class="project-example">Дизайн</p>
+                <div class="project__description">
+                  <h2 class="project__title">Видання Limited Edition</h2>
+                  <p class="project__example">Дизайн</p>
                 </div>
               </a>
             </li>
             <li class="item box">
-              <a class="projects-link" href="">
-                <div class="project-img-box">
+              <a class="projects__link" href="">
+                <div class="project__img-box">
                   <img src="./images/portfolio-img8.jpg" alt="Веб-сайт Проєкт LAB" width="370" />
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -204,15 +206,15 @@
                     приватну особу.
                   </p>
                 </div>
-                <div class="project-description">
-                  <h2 class="project-title">Проєкт LAB</h2>
-                  <p class="project-example">Маркетинг</p>
+                <div class="project__description">
+                  <h2 class="project__title">Проєкт LAB</h2>
+                  <p class="project__example">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li class="item box">
-              <a class="projects-link" href="">
-                <div class="project-img-box">
+              <a class="projects__link" href="">
+                <div class="project__img-box">
                   <img
                     src="./images/portfolio-img9.jpg"
                     alt="Веб-сайт Growing Business"
@@ -224,9 +226,9 @@
                     приватну особу.
                   </p>
                 </div>
-                <div class="project-description">
-                  <h2 class="project-title">Growing Business</h2>
-                  <p class="project-example">Додаток</p>
+                <div class="project__description">
+                  <h2 class="project__title">Growing Business</h2>
+                  <p class="project__example">Додаток</p>
                 </div>
               </a>
             </li>
@@ -236,8 +238,8 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-container container">
-        <div class="footer-content">
+      <div class="footer__container container">
+        <div class="footer__content">
           <a class="logo" href="./index.html"><span>Web</span>Studio</a>
           <address class="address">
             <ul>
@@ -258,32 +260,32 @@
             </ul>
           </address>
         </div>
-        <div class="footer-social">
-          <p class="footer-title">приєднуйтесь</p>
+        <div class="footer__social">
+          <p class="footer__title">приєднуйтесь</p>
           <ul class="social-links">
             <li>
-              <a class="social-links-item" href="">
+              <a class="social-links__item" href="">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="social-links-item" href="">
+              <a class="social-links__item" href="">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="social-links-item" href="">
+              <a class="social-links__item" href="">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="social-links-item" href="">
+              <a class="social-links__item" href="">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
@@ -292,9 +294,9 @@
           </ul>
         </div>
 
-        <div class="footer-subscribe">
-          <p class="footer-title">Підпишіться на розсилку</p>
-          <form class="footer-form">
+        <div class="footer__subscribe">
+          <p class="footer__title">Підпишіться на розсилку</p>
+          <form class="footer__form">
             <input
               class="sub-input"
               type="email"

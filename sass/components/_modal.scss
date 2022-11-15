@@ -5,13 +5,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--modal-bg-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: $modal-bg-cl;
   scale: 1;
 
-  transition-property: opacity, scale;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  @include transition(opacity, scale);
 }
 
 .backdrop.is-hidden {
@@ -21,15 +18,12 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @extend %positionCenter;
 
   width: 528px;
   height: 581px;
 
-  background: var(--background-color);
+  background: $background-cl;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -37,9 +31,7 @@
 
 .btn-close {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centerFlex();
 
   top: 8px;
   right: 8px;
@@ -49,143 +41,133 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  transition-property: color, fill;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  @include transition(color, fill);
 }
 
 .btn-close:hover,
 .btn-close:focus {
-  color: var(--btn-color);
+  color: $btn-cl;
   fill: currentColor;
 }
 
 .modal-form {
-  outline: 1px solid blue;
   height: 100%;
   padding: 40px;
 }
 
-.form-title {
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(23 / 20);
-  text-align: center;
-  letter-spacing: 0.03em;
+.form {
+  &__title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
 
-  color: var(--main-text-color);
+    color: $main-txt-cl;
+  }
+
+  &__field {
+    position: relative;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    height: 40px;
+    width: 100%;
+    padding: 12px;
+    padding-left: 42px;
+
+    border: 1px solid $form-border-cl;
+    border-radius: 4px;
+
+    outline: transparent;
+
+    @include transition(border-color);
+  }
+  &__comment {
+    margin-bottom: 20px;
+  }
+
+  &__input:focus,
+  &__textarea:focus {
+    border-color: $btn-cl;
+  }
+  &__icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+
+    @include transition(fill);
+  }
+
+  &__input:focus + &__icon {
+    fill: $btn-cl;
+  }
+
+  &__label {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+
+    color: $additional-txt-cl;
+  }
+
+  &__textarea {
+    padding: 12px 16px;
+    height: 120px;
+    resize: none;
+  }
+
+  &__field-check {
+    display: flex;
+    align-items: center;
+
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+
+    color: $additional-txt-cl;
+  }
+
+  &__field-check &__link {
+    color: $btn-cl;
+    text-decoration: underline;
+  }
+
+  &__field-check input[type='checkbox'] {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  &__check {
+    margin-left: 12px;
+    margin-right: 7px;
+    border: 2px solid $main-txt-cl;
+    border-radius: 2px;
+
+    @include transition(background-color, border-color);
+  }
 }
-
-.form-field {
-  position: relative;
-  margin-bottom: 10px;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.form-input {
-  height: 40px;
-  width: 100%;
-  padding: 12px;
-  padding-left: 42px;
-
-  border: 1px solid var(--form-border-color);
-  border-radius: 4px;
-
-  outline: transparent;
-
-  transition-property: border-color;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
-}
-
-.form-comment {
-  margin-bottom: 20px;
-}
-
-.form-input:focus,
-.form-textarea:focus {
-  border-color: var(--btn-color);
-}
-
 .icon-wrap {
   position: relative;
 }
 
-.form-icon {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-
-  transition-property: fill;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
-}
-
-.form-input:focus + .form-icon {
-  fill: var(--btn-color);
-}
-
-.form-label {
-  margin-bottom: 4px;
-
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
-
-  color: var(--additional-text-color);
-}
-
-.form-textarea {
-  padding: 12px 16px;
-  height: 120px;
-  resize: none;
-}
-
-.form-field-check {
-  display: flex;
-  align-items: center;
-
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-
-  color: var(--additional-text-color);
-}
-
-.form-field-check .form-link {
-  color: var(--btn-color);
-  text-decoration: underline;
-}
-
-.form-field-check input[type='checkbox'] {
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.form-check {
-  margin-left: 12px;
-  margin-right: 7px;
-  border: 2px solid var(--main-text-color);
-  border-radius: 2px;
-
-  transition-property: background-color, border-color;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
-}
-
-.checkbox:checked + .form-check {
-  background-color: var(--btn-color);
+.checkbox:checked + .form__check {
+  background-color: $btn-cl;
   border: none;
 }

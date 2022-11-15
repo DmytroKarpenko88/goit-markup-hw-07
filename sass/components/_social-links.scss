@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  
-  &-item {
+
+  &__item {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -12,11 +12,11 @@
     height: 44px;
     border-radius: 50%;
     fill: $icon-cl;
-  
+
     transition-property: background-color, fill;
     transition-duration: $duration;
     transition-timing-function: $timing-function;
-    
+
     &:hover,
     &:focus {
       background-color: $btn-cl;
@@ -24,4 +24,3 @@
     }
   }
 }
-

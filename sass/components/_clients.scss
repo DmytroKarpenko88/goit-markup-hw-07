@@ -1,38 +1,23 @@
 .clients {
-    &-list {
-      display: flex;
-      gap: 30px;
-    }
-    
-    &-link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 170px;
-      height: 92px;
-      border: 1px solid $icon-cl;
-      border-radius: 4px;
-      fill: $icon-cl;
-    }
-    
-    &-link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    
-      transition-property: border-color, fill;
-      transition-duration: $duration;
-      transition-timing-function: $timing-function;
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
 
+  &__link {
+    @include centerFlex();
+    @include transition(border-color, fill);
 
-      &:hover,
-      &:focus {
-        border-color: $btn-cl;
-        fill: $btn-cl;
-      }
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icon-cl;
+    border-radius: 4px;
+    fill: $icon-cl;
+
+    &:hover,
+    &:focus {
+      border-color: $btn-cl;
+      fill: $btn-cl;
     }
+  }
 }
-
-
-
-
